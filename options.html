@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notlarım</title>
+
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        color: rgb(241, 144, 33);
+        font-size: 30px;
+        overflow: hidden;
+      }
+      .container {
+        width: 75%;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .notes-container {
+        padding: 10px;
+        color: rgb(0, 0, 0);
+      }
+
+      .note-container {
+        display: flex;
+        background-color: #e5eeee;
+        margin: 10px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #cacece;
+        box-shadow: 5px 5px rgba(59, 56, 56, 0.15),
+          inset 0px 15px 10px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+      }
+
+      input {
+        -webkit-appearance: none;
+        background-color: #fafafa;
+        border: 1px solid #cacece;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+          inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 3px;
+        display: inline-block;
+        position: relative;
+      }
+
+      input:active,
+      input:checked:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+          inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      input:checked {
+        background-color: #e9ecee;
+        border: 1px solid #adb8c0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+          inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+          inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #8b9aa5;
+      }
+
+      input:checked:after {
+        content: "\2714";
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        color: #5c7d97;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Notlarım</h1>
+      <div class="notes-container" id="notes-container"></div>
+    </div>
+
+    <script src="./options_script.js"></script>
+  </body>
+</html>

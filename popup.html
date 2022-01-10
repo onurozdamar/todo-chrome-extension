@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(5, 6, 65);
+        background-color: rgb(255, 170, 13);
+        font-size: 30px;
+      }
+      input {
+        background-color: rgb(0, 250, 133);
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid beige;
+        border-color: rgb(0, 139, 74) rgb(0, 92, 49) rgb(0, 92, 49)
+          rgb(0, 139, 74);
+        border-radius: 5px;
+        outline: none;
+      }
+      button {
+        background-color: rgb(0, 250, 133);
+        width: 50px;
+        padding: 7px;
+        border: 2px solid beige;
+        border-color: rgb(0, 139, 74) rgb(0, 92, 49) rgb(0, 92, 49)
+          rgb(0, 139, 74);
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      button:hover {
+        background-color: rgb(43, 248, 152);
+      }
+      button:active {
+        background-color: rgb(77, 219, 153);
+        border-color: rgb(0, 92, 49) rgb(0, 139, 74) rgb(0, 139, 74)
+          rgb(0, 92, 49);
+      }
+    </style>
+  </head>
+  <body>
+    <div>Yeni not ekle</div>
+    <input type="text" id="note-input" />
+    <button id="my-popup-button">Ekle</button>
+
+    <script src="./popup_script.js"></script>
+  </body>
+</html>
